@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }  
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-image: url("image/bg.jpg");
     background-size: cover;
@@ -11,27 +11,71 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #333;
+} */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+    background: linear-gradient(
+        -45deg,
+        #141e30,
+        #243b55,
+        #536976,
+        #0f172a,
+        #64748b
+    );
+
+    background-size: 400% 400%;
+    animation: backgroundMove 12s ease infinite;
+    color: #26364f;
+    line-height: 1.6;
 }
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 30px auto;
 }
+
 .hero {
-    background: linear-gradient(120deg, #19375f, #315d91);
+    background-image:
+        linear-gradient(
+            rgba(15, 35, 65, 0.45),
+            rgba(15, 35, 65, 0.45)
+        ),
+        url("image/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 45px;
-    border-radius: 20px 20px 5px 5px;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 250px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(36, 70, 117, 0.15);
 }
+
 .badge {
     display: inline-block;
     background-color: rgba(255,255,255,0.15);
-    padding: 7px 14px;
+    padding: 20px 14px;
     border-radius: 15px 15px 0 0;
     font-size: 11px;
     letter-spacing: 1px;
