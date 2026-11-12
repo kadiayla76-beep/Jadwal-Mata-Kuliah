@@ -56,7 +56,7 @@ body {
             rgba(15, 35, 65, 0.45),
             rgba(15, 35, 65, 0.45)
         ),
-        url("image/background.jpeg");
+        url("image/");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -328,14 +328,21 @@ footer small {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+
+    padding: 20px 30px;
     margin-bottom: 20px;
-    background-color: #0E2148;
-    border-radius: 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    background: #10254b;
+    border-radius: 12px;
 }
 
 .navbar h2 {
-    color: rgb(193, 183, 210);
+    color: rgb(255, 255, 255);
     font-size: 23px;
     margin-left: 20px;
 }
@@ -347,7 +354,7 @@ footer small {
 }
 
 .nav-menu a {
-    color: rgb(193, 183, 210);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
